@@ -1,6 +1,6 @@
-package majorProject.one.AuthenticationService.repo;
+package majorProject.one.UserService.repo;
 
-import majorProject.one.AuthenticationService.entities.User;
+import majorProject.one.UserService.entities.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,9 @@
-package majorProject.one.AuthenticationService.controller;
+package com.gfg.session18jbdl30majorproject.UserService.controller;
 
-import majorProject.one.AuthenticationService.entities.UserServiceRequest;
-import majorProject.one.AuthenticationService.manager.UserService;
+
+import com.gfg.session18jbdl30majorproject.UserService.Entities.UserServiceRequest;
+import com.gfg.session18jbdl30majorproject.UserService.manager.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,11 +15,11 @@ public class UserController {
 
     @PostMapping("/user")
     void create(@RequestBody UserServiceRequest userServiceRequest){
-        userService.createUser(userServiceRequest);
+        userService.create(userServiceRequest);
     }
 
     @GetMapping("/user/{username}")
     ResponseEntity get(@PathVariable("username") String username){
-        return ResponseEntity.ok(userService.get(username));
+       return ResponseEntity.ok(userService.get(username));
     }
 }

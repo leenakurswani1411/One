@@ -1,4 +1,4 @@
-package majorProject.one.AuthenticationService.entities;
+package majorProject.one.UserService.entities;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserServiceRequest {
+public class UserResponse {
     private String username;
     private String password;
     private String email;

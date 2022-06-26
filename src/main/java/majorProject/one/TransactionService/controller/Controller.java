@@ -1,6 +1,6 @@
 package majorProject.one.TransactionService.controller;
 
-import majorProject.one.AuthenticationService.entities.User;
+import majorProject.one.UserService.entities.User;
 import majorProject.one.TransactionService.manager.TransactionManager;
 import majorProject.one.TransactionService.model.TransactionRequest;
 import majorProject.one.TransactionService.model.TransactionResponse;
@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
-
-import java.net.Authenticator;
 
 @RestController
 public class Controller {

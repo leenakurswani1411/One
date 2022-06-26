@@ -1,13 +1,13 @@
-package majorProject.one.AuthenticationService.entities;
+package com.gfg.session18jbdl30majorproject.UserService.Entities;
 
 import lombok.*;
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Builder
-public class UserResponse {
+public class UserServiceRequest {
     private String username;
     private String password;
     private String email;

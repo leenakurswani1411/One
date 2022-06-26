@@ -1,16 +1,13 @@
-package majorProject.one.AuthenticationService.manager;
+package majorProject.one.UserService.manager;
 
 import majorProject.one.AuthenticationService.MyPasswordEncoder;
-import majorProject.one.AuthenticationService.entities.User;
-import majorProject.one.AuthenticationService.entities.UserResponse;
-import majorProject.one.AuthenticationService.entities.UserServiceRequest;
-import majorProject.one.AuthenticationService.repo.UserRepository;
+import majorProject.one.UserService.entities.User;
+import majorProject.one.UserService.entities.UserResponse;
+import majorProject.one.UserService.entities.UserServiceRequest;
+import majorProject.one.UserService.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService{
